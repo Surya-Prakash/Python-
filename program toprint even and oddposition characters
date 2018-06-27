@@ -1,0 +1,4 @@
+i=input("Enter the string")
+
+print('chars at even posotion',i[::2])
+print('chars at odd posotion',i[1::2])
