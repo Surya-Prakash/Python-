@@ -1,0 +1,20 @@
+from threading import*
+import time
+def double(number):
+    for i in number:
+        time.sleep(1)
+        print('duble',2*i)
+def square(number):
+    for i in number:
+        time.sleep(1)
+        print('sqr',i*i)
+number=[1,2,3,4,5,6,7]
+begin=time.time()
+t1=Thread(target=double,args=(number,))
+t2=Thread(target=square,args=(number,))
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+end=time.time()
+print("time",end-begin)
