@@ -1,0 +1,14 @@
+from threading import*
+def display():
+    for i in range(8):
+        print('display:')
+def disk2():
+    for i in range(10):
+        print('happy'*4)
+t=Thread(target=display)
+t.start()
+
+t1=Thread(target=disk2)
+t1.start()
+for i in range(22):
+    print('MT')
