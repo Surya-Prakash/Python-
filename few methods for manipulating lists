@@ -1,0 +1,8 @@
+N=[5,6,4,1,1,2,3,8]
+P=[6,7,8,3,9,]
+
+N.append(10)# add element to a list, it'll add last defaultly
+N.insert(4,89)#to add element in specific index position
+print(N)
+print(N+P)#concatinating list
+exit()
