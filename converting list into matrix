@@ -1,0 +1,8 @@
+x=[[1,2,3],[4,5,6],[7,8,9]]
+for r in x:
+    print(r)#prints row wise elements
+print('for converting list into matrix')
+for i in range(len(x)):
+    for j in range(len(x[i])):
+        print(x[i][j],end=' ')
+    print()
