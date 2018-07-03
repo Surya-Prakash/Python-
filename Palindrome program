@@ -1,0 +1,10 @@
+s=input('enter a string')
+p=s[::-1]
+if s==p:
+    print(p,'and',s,'are same its a palindrome ')
+else:
+    print(p,'and',s,'are different')
+print('is it palindrome:
+      ')
+print(s==p)
+exit()
