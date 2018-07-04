@@ -1,0 +1,12 @@
+t=tuple(input('tuple'))
+l=len(t)
+sum=0
+for x in t:
+    sum=sum+x
+    print(sum)
+print('add',sum)
+print('avg',float(sum/l))
+print(max(t))
+print(min(t))
+print(t[::-1])
+exit()
