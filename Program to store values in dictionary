@@ -1,0 +1,12 @@
+
+rec={}#empty dictionary
+n=int(input('enter number of values you need:'))
+i=0
+while i<=n:
+    name=input('enter name:')
+    marks=int(input('percentage :'))
+    rec[name]=marks
+    i=i+1
+print('student name','\t','percentage')
+for x in rec:
+    print(x,'\t',rec[x])
