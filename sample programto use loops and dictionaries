@@ -1,0 +1,19 @@
+n=int(input('enter no of stdnts'))
+d={}
+for i in range(n):
+    name=input("name of stdnt:")
+    marks=int(input('marks:'))
+    d[name]=marks
+print(d)
+while True:
+    name=input('enter stdnt name toget marks:')
+    marks=d.get(name,-1)
+    if marks==-1:
+        print('not found')
+    else:
+        print('marks of {} is {}'.format(name,marks))
+    option=input('do you want to search another stdnt [Yes|No]:')
+    if option=='No':
+        break
+print('thanks')
+    
