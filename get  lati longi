@@ -1,0 +1,24 @@
+import re
+import json
+from urllib2 import urlopen
+import requests
+
+url = 'http://ipinfo.io/json'
+response = urlopen(url)
+data = json.load(response)
+res = requests.get('https://ipinfo.io/')
+data = res.json()
+
+IP=data['ip']
+org=data['org']
+city = data['city']
+country=data['country']
+region=data['region']
+location = data['loc'].split(',')
+latitude = location[0]
+longitude = location[1]
+
+print 'Your IP detail\n '
+print 'IP : {4} \nRegion : {1} \nCountry : {2} \nCity : {3} \nOrg : {0}'.format(org,region,country,city,IP)
+print("Latitude : ", latitude)
+print("Longitude : ", longitude)
